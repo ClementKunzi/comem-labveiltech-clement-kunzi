@@ -1,575 +1,124 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head><script src="/comem-labveiltech-clement-kunzi/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=comem-labveiltech-clement-kunzi/livereload" data-no-instant defer></script>
-  <title>
-  L&#39;avenir du développement web · Clément Künzi
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Clément Künzi">
-<meta name="description" content="L&#39;avenir du développement web – Quels outils et méthodologies pour demain ?">
-<meta name="keywords" content="blog,developer,personal">
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="L&#39;avenir du développement web">
-  <meta name="twitter:description" content="L&#39;avenir du développement web – Quels outils et méthodologies pour demain ?">
-
-<meta property="og:url" content="http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/">
-  <meta property="og:site_name" content="Clément Künzi">
-  <meta property="og:title" content="L&#39;avenir du développement web">
-  <meta property="og:description" content="L&#39;avenir du développement web – Quels outils et méthodologies pour demain ?">
-  <meta property="og:locale" content="fr">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-12-09T15:19:10+01:00">
-    <meta property="article:modified_time" content="2024-12-09T15:19:10+01:00">
-    <meta property="article:tag" content="Développement Web">
-    <meta property="article:tag" content="Avenir Développement">
-
-
-
-
-<link rel="canonical" href="http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/comem-labveiltech-clement-kunzi/css/coder.css" media="screen">
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/comem-labveiltech-clement-kunzi/css/coder-dark.css" media="screen">
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
-</head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="http://localhost:1313/comem-labveiltech-clement-kunzi/">
-      Clément Künzi
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/comem-labveiltech-clement-kunzi/about/">A propos</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/comem-labveiltech-clement-kunzi/posts/">Blog</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
-
-
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/">
-              L&#39;avenir du développement web
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2024-12-09T15:19:10&#43;01:00">
-                décembre 9, 2024
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              5 minutes de lecture
-            </span>
-          </div>
-          <div class="authors">
-  <i class="fa-solid fa-user" aria-hidden="true"></i>
-    <a href="/comem-labveiltech-clement-kunzi/authors/clement-kunzi/">Clement Kunzi</a></div>
-
-          <div class="categories">
-  <i class="fa-solid fa-folder" aria-hidden="true"></i>
-    <a href="/comem-labveiltech-clement-kunzi/categories/blog/">Blog</a></div>
-
-          <div class="tags">
-  <i class="fa-solid fa-tag" aria-hidden="true"></i>
-    <span class="tag">
-      <a href="/comem-labveiltech-clement-kunzi/tags/d%C3%A9veloppement-web/">Développement Web</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/comem-labveiltech-clement-kunzi/tags/avenir-d%C3%A9veloppement/">Avenir Développement</a>
-    </span></div>
-
-        </div>
-      </header>
-
-      <div class="post-content">
-        
-        <h1 id="-introduction">
-  🚀 Introduction
-  <a class="heading-link" href="#-introduction">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>Le développement web est un domaine en constante évolution. Chaque année, de nouveaux outils, frameworks et méthodologies émergent, modifiant la manière dont les développeurs conçoivent et déploient leurs projets. Grâce à ma veille technologique, j&rsquo;ai pu identifier plusieurs tendances émergentes et outils prometteurs qui façonneront probablement l&rsquo;avenir du développement web.</p>
-<p>Cet article propose une synthèse des principales évolutions attendues, ainsi qu&rsquo;une réflexion sur la manière dont les développeurs peuvent s&rsquo;y préparer dès aujourd&rsquo;hui.</p>
-<h2 id="-1-lia-au-cœur-du-développement-web">
-  🌐 1. L&rsquo;IA au cœur du développement web
-  <a class="heading-link" href="#-1-lia-au-c%c5%93ur-du-d%c3%a9veloppement-web">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important-">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important-">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;Intelligence Artificielle est en train de transformer le développement web, non seulement pour automatiser certaines tâches, mais aussi pour aider à la prise de décision et à l&rsquo;amélioration de l&rsquo;expérience utilisateur.</p>
-<h3 id="-exemples-dapplication-">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication-">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Assistance au codage : GitHub Copilot, Tabnine.
+<!doctype html><html lang=fr><head><title>L'avenir du développement web · Clément Künzi
+</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Clément Künzi"><meta name=description content="L'avenir du développement web – Quels outils et méthodologies pour demain ?"><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="L'avenir du développement web"><meta name=twitter:description content="L'avenir du développement web – Quels outils et méthodologies pour demain ?"><meta property="og:url" content="https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/devapplifullstack/"><meta property="og:site_name" content="Clément Künzi"><meta property="og:title" content="L'avenir du développement web"><meta property="og:description" content="L'avenir du développement web – Quels outils et méthodologies pour demain ?"><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-12-09T15:19:10+01:00"><meta property="article:modified_time" content="2024-12-09T15:19:10+01:00"><meta property="article:tag" content="Développement Web"><meta property="article:tag" content="Avenir Développement"><link rel=canonical href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/devapplifullstack/><link rel=preload href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/comem-labveiltech-clement-kunzi/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin=anonymous media=screen><link rel=stylesheet href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/comem-labveiltech-clement-kunzi/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/favicon.svg sizes=any><link rel=icon type=image/png href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/apple-touch-icon.png><link rel=manifest href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/site.webmanifest><link rel=mask-icon href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/>Clément Künzi
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/about/>A propos</a></li><li class=navigation-item><a class=navigation-link href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/>Blog</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/devapplifullstack/>L'avenir du développement web</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2024-12-09T15:19:10+01:00>décembre 9, 2024
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+5 minutes de lecture</span></div><div class=authors><i class="fa-solid fa-user" aria-hidden=true></i>
+<a href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/authors/clement-kunzi/>Clement Kunzi</a></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/categories/blog/>Blog</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/tags/d%C3%A9veloppement-web/>Développement Web</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/tags/avenir-d%C3%A9veloppement/>Avenir Développement</a></span></div></div></header><div class=post-content><h1 id=-introduction>🚀 Introduction
+<a class=heading-link href=#-introduction><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>Le développement web est un domaine en constante évolution. Chaque année, de nouveaux outils, frameworks et méthodologies émergent, modifiant la manière dont les développeurs conçoivent et déploient leurs projets. Grâce à ma veille technologique, j&rsquo;ai pu identifier plusieurs tendances émergentes et outils prometteurs qui façonneront probablement l&rsquo;avenir du développement web.</p><p>Cet article propose une synthèse des principales évolutions attendues, ainsi qu&rsquo;une réflexion sur la manière dont les développeurs peuvent s&rsquo;y préparer dès aujourd&rsquo;hui.</p><h2 id=-1-lia-au-cœur-du-développement-web>🌐 1. L&rsquo;IA au cœur du développement web
+<a class=heading-link href=#-1-lia-au-c%c5%93ur-du-d%c3%a9veloppement-web><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important->🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important-><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>L&rsquo;Intelligence Artificielle est en train de transformer le développement web, non seulement pour automatiser certaines tâches, mais aussi pour aider à la prise de décision et à l&rsquo;amélioration de l&rsquo;expérience utilisateur.</p><h3 id=-exemples-dapplication->📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication-><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Assistance au codage : GitHub Copilot, Tabnine.
 Génération de contenu dynamique : Adaptation du contenu en temps réel grâce à l'IA.
 Détection des vulnérabilités : Outils automatisés pour repérer les failles de sécurité.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer-">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer-">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Apprendre à utiliser des assistants IA (ex. : Copilot).
+</code></pre><h3 id=-conseils-pour-se-préparer->💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer-><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Apprendre à utiliser des assistants IA (ex. : Copilot).
 Comprendre les bases du Machine Learning et du Prompt Engineering.
-</code></pre>
-<h2 id="-2-edge-computing-et-hébergement-décentralisé">
-  ⚡️ 2. Edge Computing et hébergement décentralisé
-  <a class="heading-link" href="#-2-edge-computing-et-h%c3%a9bergement-d%c3%a9centralis%c3%a9">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--1">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--1">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Avec l&rsquo;Edge Computing, les traitements de données se font plus près des utilisateurs finaux, réduisant ainsi les temps de latence.</p>
-<h3 id="-exemples-dapplication--1">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--1">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Cloudflare Workers et Vercel Edge Functions.
+</code></pre><h2 id=-2-edge-computing-et-hébergement-décentralisé>⚡️ 2. Edge Computing et hébergement décentralisé
+<a class=heading-link href=#-2-edge-computing-et-h%c3%a9bergement-d%c3%a9centralis%c3%a9><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--1>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Avec l&rsquo;Edge Computing, les traitements de données se font plus près des utilisateurs finaux, réduisant ainsi les temps de latence.</p><h3 id=-exemples-dapplication--1>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Cloudflare Workers et Vercel Edge Functions.
 Hébergement distribué pour une meilleure performance mondiale.
 Applications IoT (Internet des Objets) intégrant directement les données de périphériques connectés.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--1">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--1">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Expérimenter avec des plateformes comme Vercel ou Netlify Edge.
+</code></pre><h3 id=-conseils-pour-se-préparer--1>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Expérimenter avec des plateformes comme Vercel ou Netlify Edge.
 Adapter l'architecture backend pour une distribution optimale des données.
-</code></pre>
-<h2 id="-3-sécurité-renforcée-et-automatisée">
-  🛡️ 3. Sécurité renforcée et automatisée
-  <a class="heading-link" href="#-3-s%c3%a9curit%c3%a9-renforc%c3%a9e-et-automatis%c3%a9e">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--2">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--2">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Les cyberattaques deviennent de plus en plus sophistiquées, rendant la sécurité une priorité absolue.</p>
-<h3 id="-exemples-dapplication--2">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--2">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Authentification multi-facteurs (MFA) par défaut.
+</code></pre><h2 id=-3-sécurité-renforcée-et-automatisée>🛡️ 3. Sécurité renforcée et automatisée
+<a class=heading-link href=#-3-s%c3%a9curit%c3%a9-renforc%c3%a9e-et-automatis%c3%a9e><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--2>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--2><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Les cyberattaques deviennent de plus en plus sophistiquées, rendant la sécurité une priorité absolue.</p><h3 id=-exemples-dapplication--2>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--2><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Authentification multi-facteurs (MFA) par défaut.
 Automatisation des audits de sécurité avec des outils comme Dependabot et Snyk.
 Meilleure adoption des protocoles OAuth2 et OpenID Connect.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--2">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--2">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Intégrer la sécurité dès le début du développement (Security by Design).
+</code></pre><h3 id=-conseils-pour-se-préparer--2>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--2><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Intégrer la sécurité dès le début du développement (Security by Design).
 Suivre les recommandations de l'OWASP Top 10.
-</code></pre>
-<h2 id="-4-lessor-continu-des-progressive-web-apps-pwa">
-  📱 4. L&rsquo;essor continu des Progressive Web Apps (PWA)
-  <a class="heading-link" href="#-4-lessor-continu-des-progressive-web-apps-pwa">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--3">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--3">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Les PWA offrent une expérience utilisateur fluide et fiable, rivalisant avec les applications natives.</p>
-<h3 id="-exemples-dapplication--3">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--3">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Fonctionnement hors-ligne grâce aux Service Workers.
+</code></pre><h2 id=-4-lessor-continu-des-progressive-web-apps-pwa>📱 4. L&rsquo;essor continu des Progressive Web Apps (PWA)
+<a class=heading-link href=#-4-lessor-continu-des-progressive-web-apps-pwa><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--3>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--3><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Les PWA offrent une expérience utilisateur fluide et fiable, rivalisant avec les applications natives.</p><h3 id=-exemples-dapplication--3>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--3><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Fonctionnement hors-ligne grâce aux Service Workers.
 Intégration directe avec le système d'exploitation (ex. : notifications push).
 Réduction des coûts de développement par rapport aux applications natives.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--3">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--3">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Se familiariser avec les Service Workers et le cache applicatif.
+</code></pre><h3 id=-conseils-pour-se-préparer--3>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--3><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Se familiariser avec les Service Workers et le cache applicatif.
 Tester les PWA sur plusieurs types d'appareils et navigateurs.
-</code></pre>
-<h2 id="-5-le-design-system-comme-standard">
-  🎨 5. Le Design System comme standard
-  <a class="heading-link" href="#-5-le-design-system-comme-standard">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--4">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--4">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Les Design Systems garantissent une cohérence visuelle et fonctionnelle sur tous les produits d&rsquo;une entreprise.</p>
-<h3 id="-exemples-dapplication--4">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--4">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Material Design (Google).
+</code></pre><h2 id=-5-le-design-system-comme-standard>🎨 5. Le Design System comme standard
+<a class=heading-link href=#-5-le-design-system-comme-standard><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--4>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--4><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Les Design Systems garantissent une cohérence visuelle et fonctionnelle sur tous les produits d&rsquo;une entreprise.</p><h3 id=-exemples-dapplication--4>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--4><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Material Design (Google).
 Tailwind UI (avec Tailwind CSS).
 Ant Design.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--4">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--4">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Apprendre à intégrer un Design System dans les projets.
+</code></pre><h3 id=-conseils-pour-se-préparer--4>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--4><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Apprendre à intégrer un Design System dans les projets.
 Maîtriser des bibliothèques de composants préconçus (ex. : Chakra UI, Ant Design).
-</code></pre>
-<h2 id="-6-low-code-et-no-code--une-révolution-en-cours">
-  🤖 6. Low-Code et No-Code : Une révolution en cours
-  <a class="heading-link" href="#-6-low-code-et-no-code--une-r%c3%a9volution-en-cours">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--5">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--5">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Les plateformes Low-Code et No-Code rendent le développement plus accessible et accélèrent la création de prototypes.</p>
-<h3 id="-exemples-dapplication--5">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--5">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Bubble et Webflow pour le développement d'applications web.
+</code></pre><h2 id=-6-low-code-et-no-code--une-révolution-en-cours>🤖 6. Low-Code et No-Code : Une révolution en cours
+<a class=heading-link href=#-6-low-code-et-no-code--une-r%c3%a9volution-en-cours><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--5>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--5><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Les plateformes Low-Code et No-Code rendent le développement plus accessible et accélèrent la création de prototypes.</p><h3 id=-exemples-dapplication--5>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--5><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Bubble et Webflow pour le développement d'applications web.
 Zapier et Make pour l'automatisation de tâches.
 Prototypage rapide pour les MVP (Minimum Viable Product).
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--5">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--5">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Expérimenter avec des outils comme Webflow.
+</code></pre><h3 id=-conseils-pour-se-préparer--5>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--5><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Expérimenter avec des outils comme Webflow.
 Comprendre les limites des plateformes Low-Code par rapport au code personnalisé.
-</code></pre>
-<h2 id="-7-limportance-croissante-du-green-it">
-  🧩 7. L&rsquo;importance croissante du Green IT
-  <a class="heading-link" href="#-7-limportance-croissante-du-green-it">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--6">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--6">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Avec la montée des préoccupations environnementales, le Green IT devient une priorité pour de nombreuses entreprises.</p>
-<h3 id="-exemples-dapplication--6">
-  📊 Exemples d&rsquo;application :
-  <a class="heading-link" href="#-exemples-dapplication--6">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Hébergement sur des serveurs alimentés par des énergies renouvelables.
+</code></pre><h2 id=-7-limportance-croissante-du-green-it>🧩 7. L&rsquo;importance croissante du Green IT
+<a class=heading-link href=#-7-limportance-croissante-du-green-it><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--6>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--6><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Avec la montée des préoccupations environnementales, le Green IT devient une priorité pour de nombreuses entreprises.</p><h3 id=-exemples-dapplication--6>📊 Exemples d&rsquo;application :
+<a class=heading-link href=#-exemples-dapplication--6><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Hébergement sur des serveurs alimentés par des énergies renouvelables.
 Réduction des appels API inutiles.
 Utilisation de formats d'image plus légers (WebP, AVIF).
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--6">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--6">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Choisir des hébergeurs écologiques (ex. : Infomaniak).
+</code></pre><h3 id=-conseils-pour-se-préparer--6>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--6><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Choisir des hébergeurs écologiques (ex. : Infomaniak).
 Optimiser les performances des sites pour réduire la consommation énergétique.
-</code></pre>
-<h2 id="-8-la-montée-en-puissance-des-frameworks-modernes">
-  📚 8. La montée en puissance des frameworks modernes
-  <a class="heading-link" href="#-8-la-mont%c3%a9e-en-puissance-des-frameworks-modernes">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="-pourquoi-cest-important--7">
-  🧠 Pourquoi c&rsquo;est important ?
-  <a class="heading-link" href="#-pourquoi-cest-important--7">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Les frameworks modernes apportent des outils puissants pour accélérer et structurer le développement.</p>
-<h3 id="-frameworks-en-plein-essor-">
-  📊 Frameworks en plein essor :
-  <a class="heading-link" href="#-frameworks-en-plein-essor-">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Next.js pour le rendu côté serveur.
+</code></pre><h2 id=-8-la-montée-en-puissance-des-frameworks-modernes>📚 8. La montée en puissance des frameworks modernes
+<a class=heading-link href=#-8-la-mont%c3%a9e-en-puissance-des-frameworks-modernes><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=-pourquoi-cest-important--7>🧠 Pourquoi c&rsquo;est important ?
+<a class=heading-link href=#-pourquoi-cest-important--7><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Les frameworks modernes apportent des outils puissants pour accélérer et structurer le développement.</p><h3 id=-frameworks-en-plein-essor->📊 Frameworks en plein essor :
+<a class=heading-link href=#-frameworks-en-plein-essor-><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Next.js pour le rendu côté serveur.
 Astro pour les sites statiques rapides.
 SvelteKit pour une approche plus légère et réactive.
-</code></pre>
-<h3 id="-conseils-pour-se-préparer--7">
-  💡 Conseils pour se préparer :
-  <a class="heading-link" href="#-conseils-pour-se-pr%c3%a9parer--7">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<pre><code>Expérimenter les nouveaux frameworks et comprendre leurs forces respectives.
+</code></pre><h3 id=-conseils-pour-se-préparer--7>💡 Conseils pour se préparer :
+<a class=heading-link href=#-conseils-pour-se-pr%c3%a9parer--7><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><pre><code>Expérimenter les nouveaux frameworks et comprendre leurs forces respectives.
 Se former régulièrement via des documentations et tutoriels officiels.
-</code></pre>
-<h2 id="-conclusion">
-  🧠 Conclusion
-  <a class="heading-link" href="#-conclusion">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<p>L&rsquo;avenir du développement web sera marqué par une combinaison de technologies émergentes, d&rsquo;outils intelligents et d&rsquo;une approche plus responsable. Les développeurs devront s&rsquo;adapter en permanence, non seulement aux nouvelles tendances techniques, mais aussi aux attentes sociétales et environnementales.</p>
-<p>Rester informé, expérimenter régulièrement et cultiver une approche ouverte seront les clés du succès.</p>
-
-      </div>
-
-
-      <footer>
-        
-
-
-        
-        
-        
-        
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-    2024
-     Clément Künzi 
-    ·
-    
-    Propulsé par <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/comem-labveiltech-clement-kunzi/js/coder.js"></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</body>
-
-</html>
+</code></pre><h2 id=-conclusion>🧠 Conclusion
+<a class=heading-link href=#-conclusion><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>L&rsquo;avenir du développement web sera marqué par une combinaison de technologies émergentes, d&rsquo;outils intelligents et d&rsquo;une approche plus responsable. Les développeurs devront s&rsquo;adapter en permanence, non seulement aux nouvelles tendances techniques, mais aussi aux attentes sociétales et environnementales.</p><p>Rester informé, expérimenter régulièrement et cultiver une approche ouverte seront les clés du succès.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2024
+Clément Künzi
+·
+Propulsé par <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/comem-labveiltech-clement-kunzi/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

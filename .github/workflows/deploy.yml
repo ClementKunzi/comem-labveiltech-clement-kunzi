@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Changez en 'master' si nécessaire
+      - main # ou 'master' si c'est ta branche principale
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: 📦 Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
 
       - name: 🛠️ Build site
         run: hugo --minify

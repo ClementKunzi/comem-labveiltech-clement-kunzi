@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Veille on Clément Künzi</title>
-    <link>http://localhost:1313/tags/veille/</link>
+    <link>http://localhost:1313/comem-labveiltech-clement-kunzi/tags/veille/</link>
     <description>Recent content in Veille on Clément Künzi</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Thu, 05 Dec 2024 15:19:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/veille/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/comem-labveiltech-clement-kunzi/tags/veille/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mon système de veille technologique</title>
-      <link>http://localhost:1313/posts/systeme-veille-technologique/</link>
+      <link>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/systeme-veille-technologique/</link>
       <pubDate>Thu, 05 Dec 2024 15:19:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/systeme-veille-technologique/</guid>
-      <description>&lt;h1 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Voici le contenu de mon premier article avec Hugo !&lt;/p&gt;</description>
+      <guid>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/systeme-veille-technologique/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🔍 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Dans le domaine du développement web fullstack, rester à jour est essentiel. Les technologies, frameworks et méthodologies évoluent constamment. Une veille technologique structurée me permet non seulement de suivre ces évolutions, mais aussi d&amp;rsquo;apporter des solutions innovantes aux problématiques rencontrées dans mes projets.&lt;/p&gt;&#xA;&lt;p&gt;Cet article détaille mon système d&amp;rsquo;écoute, les outils que j&amp;rsquo;utilise, les mots-clés que j&amp;rsquo;ai choisis, ainsi que la manière dont j&amp;rsquo;organise ma veille pour qu&amp;rsquo;elle reste efficace et pertinente.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

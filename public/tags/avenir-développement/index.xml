@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Avenir Développement on Clément Künzi</title>
-    <link>http://localhost:1313/tags/avenir-d%C3%A9veloppement/</link>
+    <link>http://localhost:1313/comem-labveiltech-clement-kunzi/tags/avenir-d%C3%A9veloppement/</link>
     <description>Recent content in Avenir Développement on Clément Künzi</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Mon, 09 Dec 2024 15:19:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/avenir-d%C3%A9veloppement/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/comem-labveiltech-clement-kunzi/tags/avenir-d%C3%A9veloppement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>L&#39;avenir du développement web</title>
-      <link>http://localhost:1313/posts/devapplifullstack/</link>
+      <link>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/</link>
       <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/devapplifullstack/</guid>
-      <description></description>
+      <guid>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Le développement web est un domaine en constante évolution. Chaque année, de nouveaux outils, frameworks et méthodologies émergent, modifiant la manière dont les développeurs conçoivent et déploient leurs projets. Grâce à ma veille technologique, j&amp;rsquo;ai pu identifier plusieurs tendances émergentes et outils prometteurs qui façonneront probablement l&amp;rsquo;avenir du développement web.&lt;/p&gt;&#xA;&lt;p&gt;Cet article propose une synthèse des principales évolutions attendues, ainsi qu&amp;rsquo;une réflexion sur la manière dont les développeurs peuvent s&amp;rsquo;y préparer dès aujourd&amp;rsquo;hui.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

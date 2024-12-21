@@ -1,9 +1,10 @@
-baseURL = "http://www.example.com"
+baseURL = "https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/"
 title = "Clément Künzi"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "fr"
 enableEmoji = true
+publishDir = "public"
 
 [pagination]
 pagerSize = 6

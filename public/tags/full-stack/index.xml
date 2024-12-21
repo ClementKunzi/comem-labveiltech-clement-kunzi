@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Full Stack on Clément Künzi</title>
-    <link>http://localhost:1313/tags/full-stack/</link>
+    <link>http://localhost:1313/comem-labveiltech-clement-kunzi/tags/full-stack/</link>
     <description>Recent content in Full Stack on Clément Künzi</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Mon, 09 Dec 2024 15:19:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/full-stack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/comem-labveiltech-clement-kunzi/tags/full-stack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Développement d&#39;une application fullstack – Les bonnes pratiques</title>
-      <link>http://localhost:1313/posts/devapplifullstack/</link>
+      <link>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/</link>
       <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/devapplifullstack/</guid>
-      <description></description>
+      <guid>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/devapplifullstack/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Le développement d&amp;rsquo;une application fullstack est une discipline exigeante qui combine des compétences backend et frontend, ainsi qu&amp;rsquo;une bonne dose d&amp;rsquo;organisation et d&amp;rsquo;adaptabilité. Grâce à ma veille technologique, j&amp;rsquo;ai pu identifier plusieurs bonnes pratiques récurrentes partagées par des experts du domaine, des retours d&amp;rsquo;expérience de développeurs et des recommandations issues de projets concrets.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-1-une-architecture-modulaire-et-claire&#34;&gt;&#xD;&#xA;  ⚙️ 1. Une architecture modulaire et claire&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-1-une-architecture-modulaire-et-claire&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;-pourquoi-cest-essentiel-&#34;&gt;&#xD;&#xA;  🧠 Pourquoi c&amp;rsquo;est essentiel ?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-pourquoi-cest-essentiel-&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Une application fullstack doit pouvoir évoluer facilement et être maintenue efficacement. Une structure modulaire permet une séparation claire des responsabilités, facilite la collaboration en équipe et réduit la dette technique.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

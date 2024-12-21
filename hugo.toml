@@ -5,6 +5,7 @@ languageCode = "en"
 defaultContentLanguage = "fr"
 enableEmoji = true
 publishDir = "public"
+canonifyURLs = true
 
 [pagination]
 pagerSize = 6

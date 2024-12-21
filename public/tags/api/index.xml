@@ -1,19 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>API on Clément Künzi</title>
-    <link>http://localhost:1313/comem-labveiltech-clement-kunzi/tags/api/</link>
-    <description>Recent content in API on Clément Künzi</description>
-    <generator>Hugo</generator>
-    <language>fr</language>
-    <lastBuildDate>Mon, 09 Dec 2024 15:19:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/comem-labveiltech-clement-kunzi/tags/api/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Optimiser une API REST avec Express et MongoDB</title>
-      <link>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/optimiser-api/</link>
-      <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
-      <guid>http://localhost:1313/comem-labveiltech-clement-kunzi/posts/optimiser-api/</guid>
-      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Dans le développement web moderne, les APIs REST jouent un rôle central pour connecter le frontend et le backend. Utilisées pour gérer les flux de données, elles doivent être performantes, sécurisées et scalables. Dans cet article, je vais partager des bonnes pratiques pour optimiser une API REST basée sur Express.js et MongoDB.&lt;/p&gt;&#xA;&lt;p&gt;Que ce soit pour réduire les temps de réponse, garantir la sécurité des endpoints ou structurer proprement le code, ces conseils sont issus de mon expérience personnelle et des recommandations du secteur.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>API on Clément Künzi</title><link>https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/tags/api/</link><description>Recent content in API on Clément Künzi</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Mon, 09 Dec 2024 15:19:10 +0100</lastBuildDate><atom:link href="https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/tags/api/index.xml" rel="self" type="application/rss+xml"/><item><title>Optimiser une API REST avec Express et MongoDB</title><link>https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/optimiser-api/</link><pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate><guid>https://clementkunzi.github.io/comem-labveiltech-clement-kunzi/posts/optimiser-api/</guid><description>&lt;h1 id="-introduction">
+ 🚀 Introduction
+ &lt;a class="heading-link" href="#-introduction">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h1>
+&lt;p>Dans le développement web moderne, les APIs REST jouent un rôle central pour connecter le frontend et le backend. Utilisées pour gérer les flux de données, elles doivent être performantes, sécurisées et scalables. Dans cet article, je vais partager des bonnes pratiques pour optimiser une API REST basée sur Express.js et MongoDB.&lt;/p>
+&lt;p>Que ce soit pour réduire les temps de réponse, garantir la sécurité des endpoints ou structurer proprement le code, ces conseils sont issus de mon expérience personnelle et des recommandations du secteur.&lt;/p></description></item></channel></rss>

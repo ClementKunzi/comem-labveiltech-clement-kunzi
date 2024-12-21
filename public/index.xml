@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clément Künzi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Clément Künzi</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 09 Dec 2024 15:19:10 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Développement d&#39;une application fullstack – Les bonnes pratiques</title>
+      <link>http://localhost:1313/posts/devapplifullstack/</link>
+      <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/devapplifullstack/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Le développement d&amp;rsquo;une application fullstack est une discipline exigeante qui combine des compétences backend et frontend, ainsi qu&amp;rsquo;une bonne dose d&amp;rsquo;organisation et d&amp;rsquo;adaptabilité. Grâce à ma veille technologique, j&amp;rsquo;ai pu identifier plusieurs bonnes pratiques récurrentes partagées par des experts du domaine, des retours d&amp;rsquo;expérience de développeurs et des recommandations issues de projets concrets.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-1-une-architecture-modulaire-et-claire&#34;&gt;&#xD;&#xA;  ⚙️ 1. Une architecture modulaire et claire&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-1-une-architecture-modulaire-et-claire&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;-pourquoi-cest-essentiel-&#34;&gt;&#xD;&#xA;  🧠 Pourquoi c&amp;rsquo;est essentiel ?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-pourquoi-cest-essentiel-&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Une application fullstack doit pouvoir évoluer facilement et être maintenue efficacement. Une structure modulaire permet une séparation claire des responsabilités, facilite la collaboration en équipe et réduit la dette technique.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>L&#39;avenir du développement web</title>
+      <link>http://localhost:1313/posts/devapplifullstack/</link>
+      <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/devapplifullstack/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Le développement web est un domaine en constante évolution. Chaque année, de nouveaux outils, frameworks et méthodologies émergent, modifiant la manière dont les développeurs conçoivent et déploient leurs projets. Grâce à ma veille technologique, j&amp;rsquo;ai pu identifier plusieurs tendances émergentes et outils prometteurs qui façonneront probablement l&amp;rsquo;avenir du développement web.&lt;/p&gt;&#xA;&lt;p&gt;Cet article propose une synthèse des principales évolutions attendues, ainsi qu&amp;rsquo;une réflexion sur la manière dont les développeurs peuvent s&amp;rsquo;y préparer dès aujourd&amp;rsquo;hui.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Optimiser une API REST avec Express et MongoDB</title>
+      <link>http://localhost:1313/posts/optimiser-api/</link>
+      <pubDate>Mon, 09 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/optimiser-api/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Dans le développement web moderne, les APIs REST jouent un rôle central pour connecter le frontend et le backend. Utilisées pour gérer les flux de données, elles doivent être performantes, sécurisées et scalables. Dans cet article, je vais partager des bonnes pratiques pour optimiser une API REST basée sur Express.js et MongoDB.&lt;/p&gt;&#xA;&lt;p&gt;Que ce soit pour réduire les temps de réponse, garantir la sécurité des endpoints ou structurer proprement le code, ces conseils sont issus de mon expérience personnelle et des recommandations du secteur.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Les tendances actuelles du développement web en 2024</title>
+      <link>http://localhost:1313/posts/tendance-web-2024/</link>
+      <pubDate>Sat, 07 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tendance-web-2024/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🚀 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Le développement web est un domaine en perpétuelle évolution. Chaque année, de nouvelles technologies, frameworks et pratiques émergent, redéfinissant les standards du secteur. En tant que développeur fullstack, rester informé de ces tendances est essentiel pour offrir des solutions modernes et performantes.&lt;/p&gt;&#xA;&lt;p&gt;Dans cet article, je vais explorer les tendances majeures du développement web pour 2024, analyser leurs impacts et proposer des pistes pour s’y préparer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>À propos</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 05 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Je m&amp;rsquo;appelle Clément Künzi et je suis passionné par la technologie, le développement web et la résolution de problèmes concrets. Après un apprentissage de médiamaticien au CPLN, j&amp;rsquo;ai choisi de poursuivre mes études en ingénierie des médias à la HEIG-VD, où je perfectionne mes compétences techniques et ma capacité à analyser et innover dans le domaine du numérique.&lt;/p&gt;&#xA;&lt;h1 id=&#34;pourquoi-ce-blog&#34;&gt;&#xD;&#xA;  Pourquoi ce blog&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#pourquoi-ce-blog&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Ce blog a été créé dans le cadre du cours LabVeilTech à la HEIG-VD. Il me permet de partager le fruit de ma veille technologique, d&amp;rsquo;analyser les tendances du secteur et de contribuer à une meilleure compréhension des outils et méthodologies modernes. Mais au-delà du cadre académique, ce blog est aussi un espace où je peux exprimer ma vision et proposer mes solutions aux problématiques actuelles du développement web et technologique.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mon système de veille technologique</title>
+      <link>http://localhost:1313/posts/systeme-veille-technologique/</link>
+      <pubDate>Thu, 05 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/systeme-veille-technologique/</guid>
+      <description>&lt;h1 id=&#34;-introduction&#34;&gt;&#xD;&#xA;  🔍 Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Dans le domaine du développement web fullstack, rester à jour est essentiel. Les technologies, frameworks et méthodologies évoluent constamment. Une veille technologique structurée me permet non seulement de suivre ces évolutions, mais aussi d&amp;rsquo;apporter des solutions innovantes aux problématiques rencontrées dans mes projets.&lt;/p&gt;&#xA;&lt;p&gt;Cet article détaille mon système d&amp;rsquo;écoute, les outils que j&amp;rsquo;utilise, les mots-clés que j&amp;rsquo;ai choisis, ainsi que la manière dont j&amp;rsquo;organise ma veille pour qu&amp;rsquo;elle reste efficace et pertinente.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

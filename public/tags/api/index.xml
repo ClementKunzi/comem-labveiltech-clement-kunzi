@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API on Clément Künzi</title>
+    <link>http://localhost:1313/tags/api/</link>
+    <description>Recent content in API on Clément Künzi</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 07 Dec 2024 15:19:10 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimiser une API REST avec Express et MongoDB</title>
+      <link>http://localhost:1313/posts/tendance-web-2024/</link>
+      <pubDate>Sat, 07 Dec 2024 15:19:10 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tendance-web-2024/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

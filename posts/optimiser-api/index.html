@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Optimiser une API REST avec Express et MongoDB · Clément Künzi
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Clément Künzi">
+<meta name="description" content="Optimiser une API REST avec Express et MongoDB – Bonnes pratiques">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Optimiser une API REST avec Express et MongoDB">
+  <meta name="twitter:description" content="Optimiser une API REST avec Express et MongoDB – Bonnes pratiques">
+
+<meta property="og:url" content="http://localhost:1313/posts/optimiser-api/">
+  <meta property="og:site_name" content="Clément Künzi">
+  <meta property="og:title" content="Optimiser une API REST avec Express et MongoDB">
+  <meta property="og:description" content="Optimiser une API REST avec Express et MongoDB – Bonnes pratiques">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-09T15:19:10+01:00">
+    <meta property="article:modified_time" content="2024-12-09T15:19:10+01:00">
+    <meta property="article:tag" content="Développement Web">
+    <meta property="article:tag" content="API">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/optimiser-api/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Clément Künzi
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">A propos</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/optimiser-api/">
+              Optimiser une API REST avec Express et MongoDB
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-12-09T15:19:10&#43;01:00">
+                décembre 9, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4 minutes de lecture
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/clement-kunzi/">Clement Kunzi</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/d%C3%A9veloppement-web/">Développement Web</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/api/">API</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="-introduction">
+  🚀 Introduction
+  <a class="heading-link" href="#-introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Dans le développement web moderne, les APIs REST jouent un rôle central pour connecter le frontend et le backend. Utilisées pour gérer les flux de données, elles doivent être performantes, sécurisées et scalables. Dans cet article, je vais partager des bonnes pratiques pour optimiser une API REST basée sur Express.js et MongoDB.</p>
+<p>Que ce soit pour réduire les temps de réponse, garantir la sécurité des endpoints ou structurer proprement le code, ces conseils sont issus de mon expérience personnelle et des recommandations du secteur.</p>
+<h2 id="-1-structurer-son-projet-proprement">
+  ⚙️ 1. Structurer son projet proprement
+  <a class="heading-link" href="#-1-structurer-son-projet-proprement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Une structure claire est essentielle pour maintenir une API à long terme.</p>
+<h3 id="-exemple-darborescence-recommandée-">
+  📁 Exemple d&rsquo;arborescence recommandée :
+  <a class="heading-link" href="#-exemple-darborescence-recommand%c3%a9e-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>/project
+│
+├── controllers/ ## Gestion de la logique métier
+├── models/ ## Modèles MongoDB
+├── routes/ ## Définition des endpoints API
+├── middleware/ ## Middleware (authentification, logs, etc.)
+├── config/ ## Configuration globale (env, database)
+├── utils/ ## Fonctions utilitaires
+├── app.js ## Configuration principale d&rsquo;Express
+└── server.js ## Lancement du serveur</p>
+<h3 id="-bonnes-pratiques-">
+  💡 Bonnes pratiques :
+  <a class="heading-link" href="#-bonnes-pratiques-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Séparer les routes, contrôleurs et modèles pour une meilleure lisibilité.
+Utiliser des fichiers .env pour les variables d’environnement sensibles (ex. : clés API, connexions MongoDB).
+</code></pre>
+<h2 id="-2-optimiser-les-requêtes-mongodb">
+  🔗 2. Optimiser les requêtes MongoDB
+  <a class="heading-link" href="#-2-optimiser-les-requ%c3%aates-mongodb">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>MongoDB est performant, mais les requêtes mal optimisées peuvent entraîner des ralentissements.</p>
+<h3 id="-conseils-clés-">
+  📌 Conseils clés :
+  <a class="heading-link" href="#-conseils-cl%c3%a9s-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Utiliser les index : Assurez-vous que les champs fréquemment recherchés sont indexés.
+Limiter les données retournées : Utilisez .select() pour ne récupérer que les champs nécessaires.
+Pagination : Implémentez une pagination pour éviter de charger des milliers de documents en une seule requête.
+</code></pre>
+<h3 id="-exemple-">
+  📚 Exemple :
+  <a class="heading-link" href="#-exemple-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>const users = await User.find()
+.select(&rsquo;name email&rsquo;)
+.skip((page - 1) * limit)
+.limit(limit);</p>
+<h4 id="-3-sécuriser-les-endpoints-api">
+  🔒 3. Sécuriser les endpoints API
+  <a class="heading-link" href="#-3-s%c3%a9curiser-les-endpoints-api">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>La sécurité ne doit jamais être négligée.</p>
+<h3 id="-pratiques-essentielles-">
+  📌 Pratiques essentielles :
+  <a class="heading-link" href="#-pratiques-essentielles-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Authentification JWT : Utilisez des tokens JWT pour sécuriser vos routes.
+Valider les entrées : Utilisez une bibliothèque comme Joi pour valider les données côté serveur.
+Éviter les fuites d'informations sensibles : Ne retournez jamais d'informations sensibles dans les réponses API.
+</code></pre>
+<h3 id="-exemple-dauthentification-jwt-">
+  📚 Exemple d&rsquo;authentification JWT :
+  <a class="heading-link" href="#-exemple-dauthentification-jwt-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>const jwt = require(&lsquo;jsonwebtoken&rsquo;);</p>
+<p>const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+expiresIn: &lsquo;1h&rsquo;,
+});</p>
+<h2 id="-4-gérer-les-erreurs-de-manière-cohérente">
+  🐢 4. Gérer les erreurs de manière cohérente
+  <a class="heading-link" href="#-4-g%c3%a9rer-les-erreurs-de-mani%c3%a8re-coh%c3%a9rente">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Une API bien conçue doit retourner des erreurs claires et uniformes.</p>
+<h3 id="-conseils-clés--1">
+  📌 Conseils clés :
+  <a class="heading-link" href="#-conseils-cl%c3%a9s--1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Utilisez un middleware global pour gérer les erreurs.
+Retournez toujours des messages et des codes d'erreur explicites (ex. : 400, 401, 404, 500).
+</code></pre>
+<h3 id="-exemple-de-gestion-derreurs-globale-">
+  📚 Exemple de gestion d&rsquo;erreurs globale :
+  <a class="heading-link" href="#-exemple-de-gestion-derreurs-globale-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>app.use((err, req, res, next) =&gt; {
+console.error(err.stack);
+res.status(err.status || 500).json({ message: err.message || &lsquo;Internal Server Error&rsquo; });
+});</p>
+<h2 id="-5-surveiller-et-analyser-les-performances">
+  📊 5. Surveiller et analyser les performances
+  <a class="heading-link" href="#-5-surveiller-et-analyser-les-performances">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Une API optimisée nécessite un suivi constant.</p>
+<h3 id="-outils-recommandés-">
+  📌 Outils recommandés :
+  <a class="heading-link" href="#-outils-recommand%c3%a9s-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Morgan : Logger HTTP pour Express.
+Postman : Pour tester les endpoints API.
+Prometheus &amp; Grafana : Pour surveiller les métriques API en production.
+</code></pre>
+<h3 id="-exemple-dutilisation-de-morgan-">
+  📚 Exemple d&rsquo;utilisation de Morgan :
+  <a class="heading-link" href="#-exemple-dutilisation-de-morgan-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>const morgan = require(&lsquo;morgan&rsquo;);
+app.use(morgan(&lsquo;combined&rsquo;));</p>
+<h2 id="-6-implémenter-des-middlewares-essentiels">
+  🚦 6. Implémenter des middlewares essentiels
+  <a class="heading-link" href="#-6-impl%c3%a9menter-des-middlewares-essentiels">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Les middlewares sont des éléments clés pour ajouter des fonctionnalités transversales.</p>
+<h3 id="-quelques-middlewares-indispensables-">
+  📌 Quelques middlewares indispensables :
+  <a class="heading-link" href="#-quelques-middlewares-indispensables-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Helmet : Pour sécuriser les en-têtes HTTP.
+CORS : Pour gérer les politiques de partage des ressources.
+Rate Limiting : Pour éviter les abus de requêtes.
+</code></pre>
+<h3 id="-exemple-avec-helmet-et-cors-">
+  📚 Exemple avec Helmet et CORS :
+  <a class="heading-link" href="#-exemple-avec-helmet-et-cors-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>const helmet = require(&lsquo;helmet&rsquo;);
+const cors = require(&lsquo;cors&rsquo;);</p>
+<p>app.use(helmet());
+app.use(cors());</p>
+<h2 id="-7-documenter-lapi">
+  📑 7. Documenter l&rsquo;API
+  <a class="heading-link" href="#-7-documenter-lapi">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Une API sans documentation est inutile pour les autres développeurs.</p>
+<h3 id="-outils-recommandés--1">
+  📌 Outils recommandés :
+  <a class="heading-link" href="#-outils-recommand%c3%a9s--1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre><code>Swagger : Pour générer une documentation interactive.
+Postman Collections : Pour partager et tester les endpoints.
+</code></pre>
+<h3 id="-exemple-avec-swagger-">
+  📚 Exemple avec Swagger :
+  <a class="heading-link" href="#-exemple-avec-swagger-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>const swaggerUi = require(&lsquo;swagger-ui-express&rsquo;);
+const swaggerDocument = require(&rsquo;./swagger.json&rsquo;);</p>
+<p>app.use(&rsquo;/api-docs&rsquo;, swaggerUi.serve, swaggerUi.setup(swaggerDocument));</p>
+<h2 id="-conclusion">
+  🧠 Conclusion
+  <a class="heading-link" href="#-conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Optimiser une API REST avec Express et MongoDB repose sur une combinaison de bonnes pratiques techniques, structures claires et outils adaptés. Une API performante, sécurisée et bien documentée est non seulement plus agréable à utiliser, mais également plus facile à maintenir et à faire évoluer.</p>
+<p>En appliquant ces principes, tu seras mieux préparé à relever les défis des projets complexes.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Clément Künzi 
+    ·
+    
+    Propulsé par <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
